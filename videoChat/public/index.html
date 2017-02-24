@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>P2P chat demo</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div id="callPage" class="call-page">
+        <video id="localVideo" autoplay muted="muted"></video>
+        <video id="remoteVideo" autoplay></video>
+
+        <div align="center">
+            <button id="btnCall" class="btn call" disabled>Call</button>
+            <button id="btnEndCall" class="btn end" disabled>Hang Up</button>
+        </div>
+
+    </div>
+    <script src='socket.io/socket.io.js'></script>
+    <script src='out/adapter.js'></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+video {
+    background: black;
+    border: 1px solid gray;
+}
+
+.call-page {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 800px;
+    height: 580px;
+}
+
+#localVideo {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 20px;
+    right: 15px;
+}
+
+#remoteVideo {
+    width: 800px;
+    height: 580px;
+}
+
+#buttons {
+    text-align: center;
+}
+
+.btn {
+    border-radius: 5px;
+    padding: 5px 15px;
+    font-size: 18px;
+    width: 150px;
+    height: 40px;
+    text-decoration: none;
+    margin: 10px;
+    position: relative;
+    display: inline-block;
+}
+
+.call {
+    background-color: darkgreen;
+}
+
+.end {
+    background-color: darkred;
+}

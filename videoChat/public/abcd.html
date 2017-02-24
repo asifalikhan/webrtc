@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Very simple WebRTC application with a Node.js signaling server</title>
+</head>
+
+<body>
+    <div id='mainDiv'>
+        <table border="1" width="100%">
+            <tr>
+                <th>
+                    Local video
+                </th>
+                <th>
+                    Remote video
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <video id="localVideo" autoplay muted="muted"></video>
+                </td>
+                <td>
+                    <video id="remoteVideo" autoplay></video>
+                </td>
+            </tr>
+            <tr>
+              <td align = "center">
+                <button id="btnCall" disabled>Call</button>
+                <button id="btnEndCall" disabled>End</button>
+              </td>
+              <td>
+                <!-- nothing -->
+              </td>
+            </tr>
+        </table>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src='out/adapter.js'></script>
+    <script src='js/script.js'></script>
+</body>
+
+</html>
