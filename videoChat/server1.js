@@ -20,21 +20,21 @@ var roomName = '';
 io.sockets.on('connection',function(socket){
 
     socket.on('message',function(message){
-      if(message === 'gotUserMedia'){
-        console.log('gotUserMedia detected');
-        console.log('channel name is '+roomName);
-      }
-
-      else if(message.type === 'offer'){
-        console.log('offer detected');
-      }
-
-      else if(message.type === 'answer'){
-        console.log('answer detected');
-      }
-      else if(message.type === 'candidate'){
-        console.log('candidate detectedS');
-      }
+      // if(message === 'gotUserMedia'){
+      //   console.log('gotUserMedia detected');
+      //   console.log('channel name is '+roomName);
+      // }
+      //
+      // else if(message.type === 'offer'){
+      //   console.log('offer detected');
+      // }
+      //
+      // else if(message.type === 'answer'){
+      //   console.log('answer detected');
+      // }
+      // else if(message.type === 'candidate'){
+      //   console.log('candidate detectedS');
+      // }
       //  log('S --> got message: ', message);
       socket.broadcast.to(roomName).emit('message',message);
     });
